@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <meta charset="utf-8">
+  <title>Favorite Colors Survey Form</title>
+
+</head>
+
+<body>
+  <div>
+    <h1 id="title" class="rainbow">Favorite Colors Survey Form</h1>
+    <p id="description" class="rainbow-text">
+    Which Colors are your Favourite?<br>
+    </p>
+    <form id="survey-form" action="index.html" method="post">
+      <label id="name-label" for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Your First Name Here" required><br>
+      <label id="email-label" for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Your Best Email Here" required><br>
+      <label id="number-label" for="number">Choose a Number:</label><br>
+      <input type="number" id="number" name="number" min="0" max="10" placeholder="0-10" required><br>
+
+      <div id="button-area">
+        <label id="gender-label">Gender:</label><br>
+        <input type="radio" class="radio-inline" name="gender" value="male"> Male
+        <input type="radio" class="radio-inline" name="gender" value="female"> Female
+        <input type="radio" class="radio-inline" name="gender" value="other"> Other
+      </div>
+      <label id="dropdown-label" for="dropdown">Choose a Primary Color:</label><br />
+
+      <select id="dropdown" name="cars" id="cars"><br>
+        <option id="dropdown-red" value="Red">Red</option>
+        <option id="dropdown-green" value="Green">Green</option>
+        <option id="dropdown-blue" value="Blue">Blue</option>
+      </select>
+      <label>Choose your favorite(s) Base Color(s):</label><br>
+      <input type="checkbox" id="checkbox" name="black" value="black">
+      <label for="white">White</label>
+      <input type="checkbox" id="checkbox" name="black" value="black">
+      <label for="white">Grey</label>
+      <input type="checkbox" id="checkbox" name="black" value="black">
+      <label for="white">Black</label>
+
+
+
+
+      <button id="submit" type="submit"> Submit</button>
+      <textarea> Additonal Comments </textarea>
+    </form>
+  </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
